@@ -1,9 +1,18 @@
 Author: Nick Carey
 
+Thread-Parallel Brute Force DES key cracker in java. Python run scripts for benchmarking performance and graphing results.
+
 How to Build:
+    - cd ./source
+    - javac SealedDES.java
 
 How to Run:
+    - build
+    - cd ./source
+    - java SealedDES <numThreads> <KeyLength>
 
 Brief comments on code:
 
+   Well, she aint very Object Oriented but wasnt given much to work with ;)
+   
 

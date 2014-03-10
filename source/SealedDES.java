@@ -248,7 +248,10 @@ class SealedDES implements Runnable {
         long interval = maxkey / numThreads;
         long startint = 0;		
         long endint = 0;
-		
+   
+        //plaintext hint we are searching for
+        String hint = "Hopkins";
+
         Thread[] threads = new Thread[numThreads];
         for(int m = 0; m < numThreads; m++){
             startint = endint;
@@ -256,7 +259,7 @@ class SealedDES implements Runnable {
             if(m == numThreads - 1) {
                 endint = maxkey;
             }
-            threads[m] = new Thread( new SealedDES(sldObjArr[m], startint, endint, m, runstart ));
+            threads[m] = new Thread( new SealedDES(sldObjArr[m], startint, endint, m, runstart, hint ));
             threads[m].start();
         }		
 
