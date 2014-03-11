@@ -237,7 +237,8 @@ class SealedDES implements Runnable {
 		
         // Generate a sample string
         String plainstr = "Johns Hopkins afraid of the big bad wolf?";
-		
+        
+        long runstart = System.currentTimeMillis();	
         // Encrypt and get a copy of SealedObject for each thread		
 	SealedObject[] sldObjArr = enccipher.encryptArr(plainstr, numThreads);
 
@@ -245,7 +246,6 @@ class SealedDES implements Runnable {
         // discover what key was used to encrypt the message.
 		
 	// Get and store the current time -- for timing
-        long runstart = System.currentTimeMillis();
         // calculate interval of keys for each thread to test
         long interval = maxkey / numThreads;
         long startint = 0;		

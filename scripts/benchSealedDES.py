@@ -37,11 +37,11 @@ if __name__ =='__main__':
                      metavar="#REPS")
 
   parser.add_option("-p", "--path", type="string", dest="path",
-                     default="/home/ncarey/gitrepos/ParaProg/HW2/Parallel-DES-Key-Cracker-Benchmark/source", 
+                     default="/home/ec2-user/HW2/Parallel-DES-Key-Cracker-Benchmark/source", 
                      help="Specify complete path to SealedDES.class",
                      metavar="#PATH")
   parser.add_option("-d", "--data", type="string", dest="data",
-                     default="/home/ncarey/gitrepos/ParaProg/HW2/Parallel-DES-Key-Cracker-Benchmark/data/bench.out", 
+                     default="/home/ec2-user/HW2/Parallel-DES-Key-Cracker-Benchmark/data/bench.out", 
                      help="Specify complete path output file for benchmark data",
                      metavar="#DATA")
 
