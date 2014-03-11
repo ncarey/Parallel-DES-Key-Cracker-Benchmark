@@ -219,7 +219,9 @@ class SealedDES implements Runnable {
 
         long maxkey = ~(0L);
         maxkey = maxkey >>> (64 - keybits);
-		
+
+        System.out.println("Number of keys to search: " + (maxkey + 1));		
+
         // Create a simple cipher
         SealedDES enccipher = new SealedDES ();
 		

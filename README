@@ -2,17 +2,28 @@ Author: Nick Carey
 
 Thread-Parallel Brute Force DES key cracker in java. Python run scripts for benchmarking performance and graphing results.
 
-How to Build:
+How to Build SealedDES:
     - cd ./source
     - javac SealedDES.java
 
-How to Run:
+How to Run SealedDES:
     - build
     - cd ./source
     - java SealedDES <numThreads> <KeyLength>
 
+How to Run Benchmark Script:
+    - build SealedDES
+    - cd ./scripts
+    - python benchSealedDES.py -h
+    - examine help information, ensure that you pass the correct path arguments to benchSealedDES.py
+    - example: python benchSealedDES.py -p <absolute path to source directory> 
+                                        -d <absolute path to data output directory>
+
+
 Brief comments on code:
 
-   Well, she aint very Object Oriented but wasnt given much to work with ;)
-   
+   Run the python benchSealedDES.py to generate text benchmark output file. Use this file
+   to generate pretty graphs.  Key of text benchmark file:
+   bench.out:
+   <number of threads>, <key length>, <key-space size>, <execution time seconds>, <number of keys examined per second>  
 
