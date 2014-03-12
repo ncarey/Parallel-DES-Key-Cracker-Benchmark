@@ -1,6 +1,6 @@
 Author: Nick Carey
 
-Thread-Parallel Brute Force DES key cracker in java. Python run scripts for benchmarking performance and graphing results.
+Thread-Parallel Brute Force DES key cracker in java. Python run scripts for benchmarking performance and octave scripts for graphing benchmark results.
 
 How to Build SealedDES:
     - cd ./source
@@ -23,7 +23,11 @@ How to Run Benchmark Script:
 Brief comments on code:
 
    Run the python benchSealedDES.py to generate text benchmark output file. Use this file
-   to generate pretty graphs.  Key of text benchmark file:
+   to generate pretty graphs.  Use *.m octave scripts in ./scripts folder to generate these pretty graphs.
+   The path variables in these scripts are going to have to be edited in order for them to work on your computer.
+   Sorry.
+   
+   Key of text benchmark file:
    bench.out:
    <number of threads>, <key length>, <key-space size>, <execution time seconds>, <number of keys examined per second>  
 
